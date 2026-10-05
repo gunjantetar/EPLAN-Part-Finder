@@ -60,7 +60,7 @@ def live_internet_search(mfg, mpn):
            "desig2": "PNOZsigma Safety relay (standalone)", "desig3": "N/A",
            "desc": "PNOZsigma Safety relay (standalone). Inputs: 1-/2-channel wiring with/without detection of shorts across contacts. Outputs: 3 N/O, 1 N/C, 1 semiconductor. UB 24 V DC, width: 22.5 mm, plug-in terminals of screw type Monitoring E-STOP, safety gates. Protection type: IP20, Ambient temperature: -10 - 55 °C",
            "supplier": "PILZ", "supplier_name": "Pilz", "mfg": "PILZ", "mfg_name": "Pilz",
-           "ext_docs": "https://pilz.com",
+           "ext_docs": "https://www.pilz.com/en-INT/eshop/0010000200700380G9/750104=PNOZ-s4-24VDC-3-n-o-1-n-c",
            "cert_atex": "N/A", "cert_ce": "0", "cert_gen": "N/A", "cert_ul_cat": "N/A", "cert_ul_file": "N/A", "cert_vde": "N/A",
            "width": "22.50 mm", "height": "98.00 mm", "depth": "120.00 mm",
            "clear_l": "0.00 mm", "clear_r": "0.00 mm", "clear_a": "0.00 mm", "clear_b": "0.00 mm", "clear_re": "0.00 mm", "clear_fr": "0.00 mm",
@@ -130,82 +130,83 @@ def live_internet_search(mfg, mpn):
        "Documents & Certification": {
            "External documents <22369>": consensus_verify("ext_docs", db_mouser, db_digikey, db_arrow),
            "Certification: ATEX identifier <22270>": consensus_verify("cert_atex", db_mouser, db_digikey, db_arrow),
-          "Certification: CE <22113>": consensus_verify("cert_ce", db_mouser, db_digikey, db_arrow),
-"Certification: General <22048>": consensus_verify("cert_gen", db_mouser, db_digikey, db_arrow),
-"Certification: UL Category Control Number <22368>": consensus_verify("cert_ul_cat", db_mouser, db_digikey, db_arrow),
-"Certification: UL File Number <22049>": consensus_verify("cert_ul_file", db_mouser, db_digikey, db_arrow),
-"Certification: VDE <22050>": consensus_verify("cert_vde", db_mouser, db_digikey, db_arrow),
-},
-"Mounting Data & Physical Dimensions": {
-"Width <22013>": consensus_verify("width", db_mouser, db_digikey, db_arrow),
-"Height <22012>": consensus_verify("height", db_mouser, db_digikey, db_arrow),
-"Depth <22014>": consensus_verify("depth", db_mouser, db_digikey, db_arrow),
-"Mounting clearance Width: Left <22152>": consensus_verify("clear_l", db_mouser, db_digikey, db_arrow),
-"Mounting clearance Width: Right <22153>": consensus_verify("clear_r", db_mouser, db_digikey, db_arrow),
-"Mounting clearance Height: Above <22154>": consensus_verify("clear_a", db_mouser, db_digikey, db_arrow),
-"Mounting clearance Height: Below <22155>": consensus_verify("clear_b", db_mouser, db_digikey, db_arrow),
-"Mounting clearance Depth: Rear <22157>": consensus_verify("clear_re", db_mouser, db_digikey, db_arrow),
-"Mounting clearance Depth: Front <22156>": consensus_verify("clear_fr", db_mouser, db_digikey, db_arrow),
-"Image file <22045>": consensus_verify("img_file", db_mouser, db_digikey, db_arrow),
-"Graphical macro <22010>": consensus_verify("macro_graph", db_mouser, db_digikey, db_arrow),
-"Weight <22046>": consensus_verify("weight", db_mouser, db_digikey, db_arrow),
-"Space requirement <22047>": consensus_verify("space_req", db_mouser, db_digikey, db_arrow),
-"Mounting surface <22022>": consensus_verify("mount_surf", db_mouser, db_digikey, db_arrow),
-"Center mismatch <22215>": consensus_verify("center_mis", db_mouser, db_digikey, db_arrow),
-"Clip-on height <22211>": consensus_verify("clip_h", db_mouser, db_digikey, db_arrow),
-"Mounting depth <22268>": consensus_verify("mount_depth", db_mouser, db_digikey, db_arrow),
-"Texture <22219>": consensus_verify("texture", db_mouser, db_digikey, db_arrow),
-},
-"Data Attributes & Schematic Macros": {
-"Schematic macro <22145>": consensus_verify("macro_sch", db_mouser, db_digikey, db_arrow),
-"Schematic macro: GB/CCC <22873>": consensus_verify("macro_gb", db_mouser, db_digikey, db_arrow),
-"Schematic macro: GOST <22874>": consensus_verify("macro_gost", db_mouser, db_digikey, db_arrow),
-"Schematic macro: IEC <22870>": consensus_verify("macro_iec", db_mouser, db_digikey, db_arrow),
-"Schematic macro: NFPA inch <22872>": consensus_verify("macro_nfpa_in", db_mouser, db_digikey, db_arrow),
-"Schematic macro: NFPA mm <22871>": consensus_verify("macro_nfpa_mm", db_mouser, db_digikey, db_arrow),
-"Schematic macros for company standard <22882>": consensus_verify("macro_comp_std", db_mouser, db_digikey, db_arrow),
-"Group number <22044>": consensus_verify("group_num", db_mouser, db_digikey, db_arrow),
-"Function group <22026>": consensus_verify("func_group", db_mouser, db_digikey, db_arrow),
-"Part group <22027>": consensus_verify("part_group", db_mouser, db_digikey, db_arrow),
-"Wearing part <22139>": consensus_verify("wearing_part", db_mouser, db_digikey, db_arrow),
-"Spare part <22140>": consensus_verify("spare_part", db_mouser, db_digikey, db_arrow),
-"Lubrication / maintenance <22141>": consensus_verify("lubrication", db_mouser, db_digikey, db_arrow),
-"Service time <22142>": consensus_verify("service_time", db_mouser, db_digikey, db_arrow),
-"Stress <22143>": consensus_verify("stress", db_mouser, db_digikey, db_arrow),
-"Procurement <22144>": consensus_verify("procure", db_mouser, db_digikey, db_arrow),
-},
-"Technical Electrical Data": {
-"Voltage <22033>": consensus_verify("voltage", db_mouser, db_digikey, db_arrow),
-"Connection point cross-section <22036>": consensus_verify("conn_cross", db_mouser, db_digikey, db_arrow),
-"Voltage type <22070>": consensus_verify("voltage_type", db_mouser, db_digikey, db_arrow),
-"Current <22071>": consensus_verify("current", db_mouser, db_digikey, db_arrow),
-"Switching capacity <22072>": consensus_verify("switch_cap", db_mouser, db_digikey, db_arrow),
-"Holding power <22073>": consensus_verify("hold_power", db_mouser, db_digikey, db_arrow),
-"Max. power dissipation <22074>": consensus_verify("max_diss", db_mouser, db_digikey, db_arrow),
-"Tripping current <22075>": consensus_verify("trip_curr", db_mouser, db_digikey, db_arrow),
-"Technical characteristics <22017>": consensus_verify("tech_char", db_mouser, db_digikey, db_arrow),
-},
-"Commercial Purchasing Prices": {
-"Quantity/packaging <22122>": consensus_verify("pkg", db_mouser, db_digikey, db_arrow),
-"Quantity unit <22042>": consensus_verify("unit_p", db_mouser, db_digikey, db_arrow),
-}
-}
-return verified_data
-if search_clicked:
-if not mpn_input:
-st.warning("⚠️ Please provide at least a Part Number (MPN) to search.")
-else:
-with st.spinner("Executing real-time consensus logic across distributor pipelines..."):
-time.sleep(1.0)
-results = live_internet_search(mfg_input, mpn_input)
-st.success("✅ Multi-Source Verification Complete!")
-for category, details in results.items():
-with st.expander(f"📂 {category}", expanded=True):
-for prop, value in details.items():
-if "⚠️ Conflict!" in str(value):
-st.error(f"{prop}: {value}")
-elif value == "N/A":
-st.caption(f"{prop}: {value}")
-else:
-st.write(f"{prop}: {value}")
+           "Certification: CE <22113>": consensus_verify("cert_ce", db_mouser, db_digikey, db_arrow),
+           "Certification: General <22048>": consensus_verify("cert_gen", db_mouser, db_digikey, db_arrow),
+           "Certification: UL Category Control Number <22368>": consensus_verify("cert_ul_cat", db_mouser, db_digikey, db_arrow),
+           "Certification: UL File Number <22049>": consensus_verify("cert_ul_file", db_mouser, db_digikey, db_arrow),
+           "Certification: VDE <22050>": consensus_verify("cert_vde", db_mouser, db_digikey, db_arrow),
+       },
+       "Mounting Data & Physical Dimensions": {
+           "Width <22013>": consensus_verify("width", db_mouser, db_digikey, db_arrow),
+           "Height <22012>": consensus_verify("height", db_mouser, db_digikey, db_arrow),
+           "Depth <22014>": consensus_verify("depth", db_mouser, db_digikey, db_arrow),
+           "Mounting clearance Width: Left <22152>": consensus_verify("clear_l", db_mouser, db_digikey, db_arrow),
+           "Mounting clearance Width: Right <22153>": consensus_verify("clear_r", db_mouser, db_digikey, db_arrow),
+           "Mounting clearance Height: Above <22154>": consensus_verify("clear_a", db_mouser, db_digikey, db_arrow),
+           "Mounting clearance Height: Below <22155>": consensus_verify("clear_b", db_mouser, db_digikey, db_arrow),
+           "Mounting clearance Depth: Rear <22157>": consensus_verify("clear_re", db_mouser, db_digikey, db_arrow),
+           "Mounting clearance Depth: Front <22156>": consensus_verify("clear_fr", db_mouser, db_digikey, db_arrow),
+           "Image file <22045>": consensus_verify("img_file", db_mouser, db_digikey, db_arrow),
+           "Graphical macro <22010>": consensus_verify("macro_graph", db_mouser, db_digikey, db_arrow),
+           "Weight <22046>": consensus_verify("weight", db_mouser, db_digikey, db_arrow),
+           "Space requirement <22047>": consensus_verify("space_req", db_mouser, db_digikey, db_arrow),
+           "Mounting surface <22022>": consensus_verify("mount_surf", db_mouser, db_digikey, db_arrow),
+           "Center mismatch <22215>": consensus_verify("center_mis", db_mouser, db_digikey, db_arrow),
+           "Clip-on height <22211>": consensus_verify("clip_h", db_mouser, db_digikey, db_arrow),
+           "Mounting depth <22268>": consensus_verify("mount_depth", db_mouser, db_digikey, db_arrow),
+           "Texture <22219>": consensus_verify("texture", db_mouser, db_digikey, db_arrow),
+       },
+       "Data Attributes & Schematic Macros": {
+           "Schematic macro <22145>": consensus_verify("macro_sch", db_mouser, db_digikey, db_arrow),
+           "Schematic macro: GB/CCC <22873>": consensus_verify("macro_gb", db_mouser, db_digikey, db_arrow),
+           "Schematic macro: GOST <22874>": consensus_verify("macro_gost", db_mouser, db_digikey, db_arrow),
+           "Schematic macro: IEC <22870>": consensus_verify("macro_iec", db_mouser, db_digikey, db_arrow),
+           "Schematic macro: NFPA inch <22872>": consensus_verify("macro_nfpa_in", db_mouser, db_digikey, db_arrow),
+           "Schematic macro: NFPA mm <22871>": consensus_verify("macro_nfpa_mm", db_mouser, db_digikey, db_arrow),
+           "Schematic macros for company standard <22882>": consensus_verify("macro_comp_std", db_mouser, db_digikey, db_arrow),
+           "Group number <22044>": consensus_verify("group_num", db_mouser, db_digikey, db_arrow),
+           "Function group <22026>": consensus_verify("func_group", db_mouser, db_digikey, db_arrow),
+           "Part group <22027>": consensus_verify("part_group", db_mouser, db_digikey, db_arrow),
+           "Wearing part <22139>": consensus_verify("wearing_part", db_mouser, db_digikey, db_arrow),
+           "Spare part <22140>": consensus_verify("spare_part", db_mouser, db_digikey, db_arrow),
+           "Lubrication / maintenance <22141>": consensus_verify("lubrication", db_mouser, db_digikey, db_arrow),
+           "Service time <22142>": consensus_verify("service_time", db_mouser, db_digikey, db_arrow),
+           "Stress <22143>": consensus_verify("stress", db_mouser, db_digikey, db_arrow),
+           "Procurement <22144>": consensus_verify("procure", db_mouser, db_digikey, db_arrow),
+       },
+       "Technical Electrical Data": {
+           "Voltage <22033>": consensus_verify("voltage", db_mouser, db_digikey, db_arrow),
+           "Connection point cross-section <22036>": consensus_verify("conn_cross", db_mouser, db_digikey, db_arrow),
+           "Voltage type <22070>": consensus_verify("voltage_type", db_mouser, db_digikey, db_arrow),
+           "Current <22071>": consensus_verify("current", db_mouser, db_digikey, db_arrow),
+           "Switching capacity <22072>": consensus_verify("switch_cap", db_mouser, db_digikey, db_arrow),
+           "Holding power <22073>": consensus_verify("hold_power", db_mouser, db_digikey, db_arrow),
+           "Max. power dissipation <22074>": consensus_verify("max_diss", db_mouser, db_digikey, db_arrow),
+           "Tripping current <22075>": consensus_verify("trip_curr", db_mouser, db_digikey, db_arrow),
+           "Technical characteristics <22017>": consensus_verify("tech_char", db_mouser, db_digikey, db_arrow),
+       },
+       "Commercial Purchasing Prices": {
+           "Quantity/packaging <22122>": consensus_verify("pkg", db_mouser, db_digikey, db_arrow),
+           "Quantity unit <22042>": consensus_verify("unit_p", db_mouser, db_digikey, db_arrow),
+       }
+   }
+   return verified_data
 
+if search_clicked:
+   if not mpn_input:
+       st.warning("⚠️ Please provide at least a Part Number (MPN) to search.")
+   else:
+      with st.spinner("Executing real-time consensus logic across distributor pipelines..."):
+         time.sleep(1.0)
+         results = live_internet_search(mfg_input, mpn_input)
+         st.success("✅ Multi-Source Verification Complete!")
+         
+         for category, details in results.items():
+            with st.expander(f"📂 {category}", expanded=True):
+               for prop, value in details.items():
+                  if "⚠️ Conflict!" in str(value):
+                     st.error(f"**{prop}:** {value}")
+                  elif value == "N/A":
+                     st.caption(f"**{prop}:** {value}")
+                  else:
+                     st.write(f"**{prop}:** {value}")

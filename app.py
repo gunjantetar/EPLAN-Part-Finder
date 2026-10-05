@@ -25,7 +25,6 @@ def consensus_verify(field_key, src1_dict, src2_dict, src3_dict):
    val2 = str(src2_dict.get(field_key, "N/A")).strip()
    val3 = str(src3_dict.get(field_key, "N/A")).strip()
 
-   # Normalize common empty variants to N/A
    sources = [val1, val2, val3]
    cleaned_sources = []
    for v in sources:
@@ -88,7 +87,6 @@ def live_internet_search(mfg, mpn):
            "pkg": "1", "unit_p": "m"
        }
    else:
-       # Standard Fallback Template
        db_mouser = {
            "group": "Electrical engineering <1> >> Generics", "part_num": mpn.upper(), "variant": "1", "erp_num": "N/A",
            "type_num": "N/A", "order_num": "N/A", "discontinued": "0", "desig1": "Generic Part", "desig2": "N/A", "desig3": "N/A",
